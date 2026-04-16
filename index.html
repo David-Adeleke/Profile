@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <article data-testid="test-profile-card">
+      <div class="top">
+        <figure>
+          <img
+            data-testid="test-user-avatar"
+            src="https://i.pravatar.cc/150?img=12"
+            alt="Portrait of Alex Morgan"
+            width="72"
+            height="72"
+          />
+        </figure>
+        <div class="top-text">
+          <h2 data-testid="test-user-name">David Adeleke</h2>
+          <p data-testid="test-user-bio">
+            Frontend developer based in Lagos. I care about accessible,
+            well-crafted interfaces that work for everyone.
+          </p>
+        </div>
+      </div>
+
+      <div class="time-row">
+        <span class="time-label">Epoch ms</span>
+        <span
+          data-testid="test-user-time"
+          aria-live="polite"
+          aria-atomic="true"
+          id="epoch-time"
+        ></span>
+      </div>
+
+      <hr class="divider" />
+
+      <span class="section-label">Social</span>
+      <nav data-testid="test-user-social-links" aria-label="Social links">
+        <ul>
+          <li>
+            <a
+              data-testid="test-user-social-twitter"
+              href="https://x.com/blac_toon"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Twitter</a
+            >
+          </li>
+          <li>
+            <a
+              data-testid="test-user-social-github"
+              href="https://github.com/David-Adeleke"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              data-testid="test-user-social-linkedin"
+              href="https://www.linkedin.com/in/david-adeleke-6262b9221?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="lists">
+        <div class="list-section">
+          <h3>Hobbies</h3>
+          <ul data-testid="test-user-hobbies" aria-label="Hobbies">
+            <li>Drawing</li>
+            <li>Football</li>
+            <li>Anime</li>
+          </ul>
+        </div>
+        <div class="list-section">
+          <h3>Dislikes</h3>
+          <ul data-testid="test-user-dislikes" aria-label="Dislikes">
+            <li>Slow Wi-Fi</li>
+            <li>Being interrupted</li>
+            <li>Meetings</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+    <script src="main.js"></script>
+  </body>
+</html>
